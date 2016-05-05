@@ -4,18 +4,31 @@ Vue pagination component for use with Bootstrap and Laravel pagination.
 * [Vue.js](http://vuejs.org/) (tested with 1.0.16).
 * [Bootstrap CSS](http://getbootstrap.com/) (tested with 3.3.6)
 
-All it requires to work is this object and a callback function
+#Installation
 
+``` npm install vue-laravel-pagination```
 
-### Example
+```js
+
+// You have to add this package as component to your vuejs installation
+Vue.component('pagination', require('vue-laravel-pagination'));
+```
+
+#Usage
+For making this component to work you need to provide an pagination object with these data members (all required)
+
 ```js
   pagination: {
-      total: 0, 
-      per_page: 12,
-      current_page: 1,
-      total_pages: 10
+      total: 0,  // total number of elements or items
+      per_page: 12, // items per page
+      current_page: 1, // current page (it will be automatically updated when users clicks on some page number).
+      total_pages: 10 // total pages in record
   }
+  
 ```
+Note that you must set ```current_page``` to 1 initially.
+
+### Example
 
 ```html
 
