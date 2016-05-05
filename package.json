@@ -1,0 +1,23 @@
+{
+  "name": "vue-paginate",
+  "version": "1.0.0",
+  "description": "Pagination for vuejs with combination with bootstrap works with any serverside framework",
+  "main": "paginate.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "files": [
+    "paginate.js"
+  ],
+  "homepage": "https://github.com/poush/vue-paginate",
+  "keywords": [
+    "vue",
+    "component",
+    "bootstrap",
+    "laravel",
+    "pagination"
+  ],
+  "dependencies": {},
+  "author": "poush",
+  "license": "MIT"
+}
