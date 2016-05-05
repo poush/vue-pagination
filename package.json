@@ -1,7 +1,7 @@
 {
-  "name": "vue-pagination",
+  "name": "vue-laravel-pagination",
   "version": "1.0.0",
-  "description": "Pagination for vuejs with combination with bootstrap works with any serverside framework",
+  "description": "Pagination for vuejs with bootstrap, works with any serverside framework (ready to use with laravel)",
   "main": "vue-pagination.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -19,5 +19,12 @@
   ],
   "dependencies": {},
   "author": "poush",
-  "license": "MIT"
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/poush/vue-pagination.git"
+  },
+  "bugs": {
+    "url": "https://github.com/poush/vue-pagination/issues"
+  }
 }

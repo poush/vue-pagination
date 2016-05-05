@@ -1,6 +1,6 @@
 {
-  "name": "vue-pagination",
-  "description": "Pagination for vuejs with combination with bootstrap and Laravel's pagination",
+  "name": "vue-laravel-pagination",
+  "description": "Pagination for vuejs with bootstrap, works with any serverside framework (ready to use with laravel)",
   "main": "vue-pagination.js",
   "authors": [
     "poush"
