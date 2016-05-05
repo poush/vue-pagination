@@ -1,15 +1,15 @@
 {
-  "name": "vue-paginate",
+  "name": "vue-pagination",
   "version": "1.0.0",
   "description": "Pagination for vuejs with combination with bootstrap works with any serverside framework",
-  "main": "paginate.js",
+  "main": "vue-pagination.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "files": [
     "paginate.js"
   ],
-  "homepage": "https://github.com/poush/vue-paginate",
+  "homepage": "https://github.com/poush/vue-pagination",
   "keywords": [
     "vue",
     "component",

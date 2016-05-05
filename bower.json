@@ -1,7 +1,7 @@
 {
-  "name": "vue-paginate",
+  "name": "vue-pagination",
   "description": "Pagination for vuejs with combination with bootstrap and Laravel's pagination",
-  "main": "paginate.js",
+  "main": "vue-pagination.js",
   "authors": [
     "poush"
   ],
@@ -13,7 +13,7 @@
     "laravel",
     "pagination"
   ],
-  "homepage": "https://github.com/poush/vue-paginate",
+  "homepage": "https://github.com/poush/vue-pagination",
   "moduleType": [],
   "ignore": [
     "**/.*",
