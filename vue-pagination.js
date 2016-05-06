@@ -1,6 +1,6 @@
 module.exports = {
-    template: '<nav class=" {{navClass}} ">' +
-        '<ul class="pagination {{size}} ">' +
+    template: '<nav class=" {{navClass}} " v-if="visible">' +
+        '<ul class="pagination {{size}} " >' +
             '<li v-if="pagination.current_page > 1">' +
                 '<a href="#" aria-label="Previous" @click.prevent="changePage(1)">' +
                     '<span aria-hidden="true">First</span>' +
@@ -40,7 +40,8 @@ module.exports = {
     data: function(){
         return {
             to : 0,
-            from: 0
+            from: 0,
+            visible: 1
         }
     },
     props: {
@@ -84,6 +85,9 @@ module.exports = {
                 arr.push(from);
                 from++;
             }
+            
+            if(arr.length == 1)
+                this.visible = 0
 
             return arr;
         }
