@@ -68,6 +68,8 @@ module.exports = {
     },
     computed: {
         data: function () {
+            this.visible = 1;
+
             var from = this.pagination.current_page - this.offset;
             if(from < 1) {
                 from = 1;
