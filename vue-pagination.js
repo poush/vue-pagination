@@ -1,5 +1,5 @@
 module.exports = {
-    template: '<nav class=" {{navClass}} " v-if="visible">' +
+    template: '<nav class=" {{navClass}} " v-show="visible">' +
         '<ul class="pagination {{size}} " >' +
             '<li v-if="pagination.current_page > 1">' +
                 '<a href="#" aria-label="Previous" @click.prevent="changePage(1)">' +
@@ -37,13 +37,7 @@ module.exports = {
         '</ul>' +
     '</nav>',
 
-    data: function(){
-        return {
-            to : 0,
-            from: 0,
-            visible: 1
-        }
-    },
+
     props: {
         pagination: {
             type: Object,
@@ -64,10 +58,16 @@ module.exports = {
         offset: {
             type: Number,
             default: 4
+        },
+        visible: {
+            type: Number,
+            default: 1
         }
+
     },
     computed: {
         data: function () {
+            
             this.visible = 1;
 
             var from = this.pagination.current_page - this.offset;
@@ -88,6 +88,8 @@ module.exports = {
                 from++;
             }
             
+            console.log(arr);
+
             if(arr.length == 1)
                 this.visible = 0
 
